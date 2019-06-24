@@ -1,0 +1,2 @@
+|script                                               |
+|log in as|demo_administrator|with password|jEbyH7GjjH|

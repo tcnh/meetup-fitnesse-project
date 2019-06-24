@@ -1,0 +1,10 @@
+---
+Suite
+---
+!contents -R2 -g -p -f -h
+
+!*> Global config
+!define TEST_SYSTEM {slim}
+!path fixtures
+!path fixtures/*.jar
+*!

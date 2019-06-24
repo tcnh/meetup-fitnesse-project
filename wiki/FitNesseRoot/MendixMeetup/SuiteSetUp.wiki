@@ -1,0 +1,13 @@
+!*> Fixture imports
+|Import                                |
+|nl.hsac.fitnesse.fixture.slim         |
+|nl.hsac.fitnesse.fixture.slim.web     |
+|nl.praegus.fitnesse.slim.fixtures.util|
+
+|Library           |
+|pause test fixture|
+|string fixture    |
+*!
+
+|script          |selenium driver setup|
+|start driver for|chrome               |

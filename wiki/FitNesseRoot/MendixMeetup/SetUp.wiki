@@ -1,0 +1,3 @@
+|script|browser test                         |
+|set browser size to maximum                 |
+|open  |https://budgets106-sandbox.mxapps.io/|

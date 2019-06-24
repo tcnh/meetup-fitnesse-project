@@ -1,0 +1,5 @@
+|scenario        |log in as|user|with password|pass|
+|enter           |@{user}  |as  |User name         |
+|enter           |@{pass}  |as  |Password          |
+|press enter                                       |
+|wait for visible|Start your budget                |

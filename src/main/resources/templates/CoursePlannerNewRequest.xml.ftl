@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exam="http://www.example.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <exam:CoursePlannerRoomCourse>
+         <CoursePlanning>
+                <StartDate>${StartDate}</StartDate>
+                <EndDate>${EndDate}</EndDate>
+                <Archived>${Archived}</Archived>
+                <AllDay>${AllDay}</AllDay>
+                <Color>${Category}</Color>
+         </CoursePlanning>
+         <Room>
+            <Name>${RoomName}</Name>
+            <Number>${RoomNumber}</Number>
+            <Capacity>${RoomCapacity}</Capacity>
+         </Room>
+         <Course>
+            <Name>${CourseName}</Name>
+            <Description>${CourseDescription}</Description>
+            <Category>${Category}</Category>
+         </Course>
+      </exam:CoursePlannerRoomCourse>
+   </soapenv:Body>
+</soapenv:Envelope>
