@@ -15,6 +15,7 @@ As this app runs in a sandbox environment, it will go to sleep after a while and
  * Pick up the phone or write an email!
  * Connect on [[Mendix community][https://developer.mendixcloud.com/link/profile/overview/41718]]
  * Connect on [[!-LinkedIn-!][https://www.linkedin.com/in/tomheintzberger/]]
+ * Connect on [[Slack][https://mendixcommunity.slack.com]]
  
 -----
 !*> Global config
