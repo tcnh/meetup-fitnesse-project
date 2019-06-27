@@ -16,19 +16,14 @@
         <fitnesse.version>20190620</fitnesse.version>
         <hsac.fixtures.version>4.5.3</hsac.fixtures.version>
         <surefire.version>2.22.1</surefire.version>
-        <toolchain.fixtures.version>1.12-SNAPSHOT</toolchain.fixtures.version>
+        <toolchain.fixtures.version>1.14</toolchain.fixtures.version>
         <toolchain-plugin.version>1.16</toolchain-plugin.version>
         <allure.maven.version>2.10.0</allure.maven.version>
         <allure.version>2.12.0</allure.version>
         <allure.fitnesse.listener>1.0.5</allure.fitnesse.listener>
-        <hsac.fitnesse.pdf>0.0.5</hsac.fitnesse.pdf>
-<!--
-        <jdbc.slim>1.2.3</jdbc.slim>
-        <dbfit>3.2.0</dbfit>
-        <mssql.server>7.0.0.jre8</mssql.server>
--->
+
         <junit>4.12</junit>
-        <!-- classpath that Fitnesse uses when not starting from IDE/maven -->
+
         <standalone.classpath>wiki/fixtures</standalone.classpath>
         <fitnesse.port>9090</fitnesse.port>
         <extraFailsafeListeners>,nl.hsac.fitnesse.junit.JUnitXMLPerPageListener</extraFailsafeListeners>
@@ -73,38 +68,6 @@
             <version>${toolchain.fixtures.version}</version>
         </dependency>
 
-
-        <!-- PDF -->
-        <dependency>
-            <groupId>nl.hsac</groupId>
-            <artifactId>hsac-fitnesse-pdf</artifactId>
-            <version>${hsac.fitnesse.pdf}</version>
-        </dependency>
-
-        <!-- Databases -->
-<!--
-        <dependency>
-            <groupId>com.github.six42</groupId>
-            <artifactId>jdbcslim</artifactId>
-            <version>${jdbc.slim}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.dbfit</groupId>
-            <artifactId>dbfit</artifactId>
-            <version>${dbfit}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <version>${mssql.server}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.195</version>
-        </dependency>
--->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

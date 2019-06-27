@@ -1,3 +1,7 @@
+!3 The SetUp is alway run before any test
+
+Here, we instantiate the BrowserTest fixture, set the browser window to a maximized state and open the desired URL
+
 |script|browser test                         |
 |set browser size to maximum                 |
 |open  |https://budgets106-sandbox.mxapps.io/|

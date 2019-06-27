@@ -1,9 +1,25 @@
 ---
 Suite
 ---
+!1 Mendix Maker Meetup Suite
+
+This suite uses the example app at https://budgets106-sandbox.mxapps.io/
+As this app runs in a sandbox environment, it will go to sleep after a while and needs some time to wake up again after that.
+
+# The !contents line below will print the structure of this suite as a table of contents.
 !contents -R2 -g -p -f -h
 
+!4 Any Questions? Don't hesitate to ask! 
+ * Fixture documentation can be found in .HsacExamples
+ * You can create issues/threads in https://github.com/tcnh/meetup-fitnesse-project
+ * Pick up the phone or write an email!
+ * Connect on [[Mendix community][https://developer.mendixcloud.com/link/profile/overview/41718]]
+ * Connect on [[!-LinkedIn-!][https://www.linkedin.com/in/tomheintzberger/]]
+ 
+-----
 !*> Global config
+#don't change this, or your tests will not run any longer!
+
 !define TEST_SYSTEM {slim}
 !path fixtures
 !path fixtures/*.jar

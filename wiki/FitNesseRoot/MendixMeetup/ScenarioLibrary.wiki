@@ -1,5 +1,25 @@
+Scenario's are scrip ttables that can be referenced from any test that includes them
+Scenario Libraries are ''automagically'' included in all sibling and descendant test pages in the current suite.
+
+!4 Log in scenario
+
 |scenario        |log in as|user|with password|pass|
 |enter           |@{user}  |as  |User name         |
 |enter           |@{pass}  |as  |Password          |
-|press enter                                       |
+|Click           |Log in                           |
 |wait for visible|Start your budget                |
+
+!4 Enter a alue in an input identified by its mx-name
+
+|scenario|enter   |value|as mx name      |place     |
+|enter   |@{value}|as   |css=.mx-name-@{place} input|
+
+!4 Create budget refactored to a parameterized scenario
+Note that every second cell is expected to be an argument to the scenario
+
+|scenario        |create budget|name|for|total|until|enddate|
+|enter           |@{name}      |as  |Budget name            |
+|enter           |@{total}     |as  |Total Budget           |
+|enter           |@{enddate}   |as  |End date               |
+|click           |Create Budget                             |
+|wait for visible|Budget items                              |

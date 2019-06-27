@@ -1,0 +1,34 @@
+---
+Test
+---
+!3 Step 1: Login using the log in scenario from the ScenarioLibrary
+|script                                               |
+|log in as|demo_administrator|with password|jEbyH7GjjH|
+
+!3 Step 2: Create a budget, ending 90 days in the future
+|script                                                        |
+|enter           |My Test Budget         |as|Budget description|
+|enter           |10000                  |as|Total Budget      |
+|enter           |!today (MM/dd/yyyy) +90|as|End date          |
+|click           |Create Budget                                |
+|wait for visible|Budget items                                 |
+|show            |take screenshot        |budget_created       |
+
+!3 Step 3: Add an Opex cost and verify the value of the Opex Spend field
+!| script                                                           |
+|click |Add an opex cost                                            |
+|enter |Some expenses      |as                    |Opex description |
+|enter |500                |as                    |Cost ($)         |
+|click |Save                                                        |
+|ensure|is not visible     |Add Opex Cost Item                      |
+|check |normalized value of|css=.mx-name-OpexSpend|Opex spend 500.00|
+
+!3 Step 4: Use the search form in the budget overview
+This script uses a custom scenario ''enter <value> as mx name <place>'' from the ScenarioLibrary to enter input fileds that we locate by the mx-name class that is filled from the modeler's name attribute.
+
+!| script                                                         |
+|click |Budget Overview                                           |
+|click |Search                                                    |
+|enter |My Test Budget|as mx name    |BudgetDescription           |
+|click |Search        |in            |css=.mx-grid-search-controls|
+|ensure|is visible    |My Test Budget|in  |css=.mx-datagrid-body  |
